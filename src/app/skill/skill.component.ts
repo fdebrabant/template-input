@@ -7,16 +7,14 @@ import { Skill } from '../models/skill.model';
   styleUrls: ['./skill.component.css'],
 })
 export class SkillComponent implements OnInit {
-  skill: Skill = new Skill();
-  @Input() skills!: string;
+
+// Input skills for attribut directive
+
+  @Input() 
+  skills!: Skill;
 
   constructor() {}
 
   ngOnInit(): void {
-    this.skill = {
-      site: "Website.com",
-      logo: "logo",
-      name: "name"
-    };
   }
 }
